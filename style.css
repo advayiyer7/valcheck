@@ -39,7 +39,7 @@ body {
 
 .btn-group {
     display: flex;
-    justify-content: space-around;
+    justify-content: flex-start;
     gap: 15px;
 }
 
@@ -73,6 +73,8 @@ button:focus {
     background-color: #ff4d4d;
     color: white;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    right: 200px;  /* positions the No button toward the right */
+    left: auto;   /* ensures it doesn't inherit any left positioning */
 }
 
 .no-btn:hover {
